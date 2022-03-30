@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chat';
+  isPressed:boolean=false;
+
+  update(val:boolean){
+    this.isPressed=val;
+
+  }
 }

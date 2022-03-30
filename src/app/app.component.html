@@ -1,4 +1,17 @@
+<head>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
 <app-nav></app-nav>
-<app-chat-list></app-chat-list>
-<app-chat-body></app-chat-body>
-<app-chat-box></app-chat-box>
+
+<div class="container-fluid">
+  <div class="row">
+    
+    <app-chat-list class="col-lg-3 color" (clicked)="update(true)"></app-chat-list>
+    <div class="col-lg-9">
+      <app-chat-body [chatPressed]="isPressed"></app-chat-body>
+      <app-chat-box></app-chat-box>
+    </div>
+  </div>
+</div>
+

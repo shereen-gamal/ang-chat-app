@@ -1,0 +1,10 @@
+.hoverd:hover{
+    background: #66666618;
+    cursor: pointer;
+}
+.name{
+    font-size: 15px;
+}
+.sm{
+    font-size: 8px;
+}

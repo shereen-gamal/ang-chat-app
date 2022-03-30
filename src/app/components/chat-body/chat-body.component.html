@@ -1,2 +1,27 @@
-<p>chat-body works!</p>
+<div class="container-fluid "*ngIf="!chatPressed">
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+        <div class="col-6">
+            <h4 class="text-secondary p-3">
+                Press any chat to start chating with friends.
+            </h4>
+            <img src="../../../assets/images/2989862.jpg" class="size">
+
+        </div>
+        <div class="col-3">
+
+    </div>
+
+</div>
+
+<div *ngIf="chatPressed" class="cotainer-fluid">
+    <div class="row">
+       <div class="col-12" style="height: 40px; background: #000;">
+
+       </div>
+    </div>
+
+</div>
 
